@@ -75,6 +75,15 @@ a{color:inherit;text-decoration:none}button{font:inherit}
 .skill{background:var(--paper);border:1px solid var(--line);padding:25px;min-height:180px;transition:.35s}
 .skill:hover{background:var(--accent);color:white;transform:translateY(-5px)}.skill:hover p{color:#e7e4ff}
 .skill h3{margin:0 0 9px;font-size:18px}.skill p{color:var(--muted);font-size:13px;margin:0;transition:.35s}
+.case-intro{max-width:760px;color:var(--muted);font-size:16px;margin-bottom:30px}
+.case-panel{background:var(--paper);border:1px solid var(--line);padding:30px;margin:18px 0}
+.case-panel h3{font-family:var(--serif);font-size:27px;line-height:1.1;margin:0 0 12px}
+.case-panel p,.case-panel li{color:#5d5a56;font-size:14px}
+.case-panel ul{padding-left:20px}
+.case-label{display:inline-block;border:1px solid #d7cfff;background:var(--accent2);color:#5142bd;padding:6px 10px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px}
+.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.search-example{background:var(--dark);color:white;padding:18px 20px;border-radius:3px;overflow-wrap:anywhere;font-size:14px}
+.case-disclosure{font-size:12px!important;color:var(--muted)!important;border-top:1px solid var(--line);padding-top:16px;margin-top:20px}
 .resume-note{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
 .note{background:var(--accent2);padding:40px}.note h3{font-family:var(--serif);font-size:35px;line-height:1.05;margin:0 0 15px}.note p{color:#5e596f}
 .note-dark{background:var(--dark);color:white;padding:40px}.note-dark h3{font-family:var(--serif);font-size:35px;line-height:1.05;margin:0 0 15px}.note-dark p{color:#bcbcc2}
@@ -86,7 +95,7 @@ a{color:inherit;text-decoration:none}button{font:inherit}
 footer{padding:30px 0 50px;color:var(--muted);font-size:11px;display:flex;justify-content:space-between}
 @media(max-width:800px){
  .links{display:none}.hero{min-height:90vh}.section{padding:85px 0}.sectionhead,.method,.resume-note{grid-template-columns:1fr;gap:25px}
- .experience,.skills{grid-template-columns:1fr}.factstrip{grid-template-columns:1fr 1fr}.fact:nth-child(2){border-right:0}.fact:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .experience,.skills,.case-grid{grid-template-columns:1fr}.factstrip{grid-template-columns:1fr 1fr}.fact:nth-child(2){border-right:0}.fact:nth-child(-n+2){border-bottom:1px solid var(--line)}
  .method-sticky{position:relative;top:auto}.method-sticky h2{font-size:48px}.visual{padding:35px;min-height:400px}.contactbox{padding:40px 28px}
 }
 </style>
@@ -96,7 +105,7 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:11px;display:flex;justif
 <nav class="nav" id="nav">
  <div class="navin">
   <a class="logo" href="#">MONIKA <b>NAIK</b></a>
-  <div class="links"><a href="#work">Experience</a><a href="#approach">Approach</a><a href="#skills">Strengths</a><a href="#contact">Contact</a></div>
+  <div class="links"><a href="#work">Experience</a><a href="#approach">Approach</a><a href="#skills">Strengths</a><a href="#case-study">Sample Project</a><a href="#contact">Contact</a></div>
  </div>
 </nav>
 
@@ -131,7 +140,7 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:11px;display:flex;justif
   <div class="experience">
    <article class="exp-card reveal">
     <div class="exp-date">Dec 2024 — Jul 2025</div>
-    <h3>HR Analyst · Staffing</h3><div class="company">Black and White Business Solutions</div>
+    <h3>HR Analyst (Staffing)</h3><div class="company">Black and White Business Solutions</div>
     <ul>
      <li>Sourced, screened and shortlisted candidates using Naukri, LinkedIn and Zoho Recruit.</li>
      <li>Conducted pre-screening and behavioral interviews while handling 70–100 daily calls across sourcing, follow-ups and interview coordination.</li>
@@ -141,7 +150,7 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:11px;display:flex;justif
    </article>
    <article class="exp-card reveal">
     <div class="exp-date">Feb 2026 — Apr 2026</div>
-    <h3>Associate Researcher 2</h3><div class="company">e-Hireo Global Solution</div>
+    <h3>Associate Researcher 2</h3><div class="company">e-Hireo Global Solutions Pvt. Ltd.</div>
     <ul>
      <li>Sourced candidates through Naukri and referral channels.</li>
      <li>Screened and shortlisted profiles against hiring requirements.</li>
@@ -152,9 +161,9 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:11px;display:flex;justif
   </div>
   <div class="factstrip reveal">
    <div class="fact"><strong>70–100</strong><span>daily calls across sourcing, follow-ups and interview coordination</span></div>
-   <div class="fact"><strong>₹7L+</strong><span>revenue contributed within six months</span></div>
+   <div class="fact"><strong>₹7L+</strong><span>revenue achieved through recruitment contributions within six months</span></div>
    <div class="fact"><strong>1–3</strong><span>candidates onboarded per month in one role</span></div>
-   <div class="fact"><strong>360°</strong><span>exposure from sourcing to onboarding</span></div>
+   <div class="fact"><strong>360°</strong><span>recruitment-process exposure from sourcing to onboarding</span></div>
   </div>
  </div>
 </section>
@@ -195,6 +204,53 @@ footer{padding:30px 0 50px;color:var(--muted);font-size:11px;display:flex;justif
    <div class="skill reveal"><h3>Stakeholder coordination</h3><p>Working with clients, hiring managers, candidates and interview panels to keep the process aligned.</p></div>
    <div class="skill reveal"><h3>Recruitment operations</h3><p>Candidate data, tracking, interview scheduling, documentation and onboarding support.</p></div>
    <div class="skill reveal"><h3>HR foundation</h3><p>BBA in HR & Marketing with exposure to employee relations, training and engagement activities.</p></div>
+  </div>
+ </div>
+</section>
+
+
+<section class="section" id="case-study">
+ <div class="wrap">
+  <div class="sectionhead reveal">
+   <div><div class="kicker">Practical demonstration</div><h2>Recruitment, put into practice.</h2></div>
+   <p>A sample case study showing how I would approach a non-IT hiring requirement—from understanding the role to sourcing, screening and interview coordination.</p>
+  </div>
+  <div class="case-panel reveal">
+   <span class="case-label">Fictional sample project</span>
+   <h3>Customer Support Executive</h3>
+   <p><strong>Objective:</strong> Demonstrate a structured process for identifying and screening candidates against a sample customer support requirement.</p>
+   <p><strong>Illustrative requirements:</strong> 1–3 years of relevant experience, clear communication, customer-handling skills and availability for the required work schedule. Confirm location and shift requirements with the hiring manager.</p>
+   <p class="case-disclosure">This is a hypothetical demonstration created for this portfolio. It is not a real client assignment and does not represent actual hiring results.</p>
+  </div>
+  <div class="case-grid">
+   <article class="case-panel reveal">
+    <h3>01 · Clarify the requirement</h3>
+    <ul><li>Confirm essential skills, experience and location.</li><li>Separate must-have requirements from preferences.</li><li>Agree on screening criteria and interview steps with the hiring manager.</li></ul>
+   </article>
+   <article class="case-panel reveal">
+    <h3>02 · Build the search</h3>
+    <p>Potential channels: Naukri, LinkedIn and employee referrals, depending on the target candidate pool.</p>
+    <p><strong>Example Boolean search</strong></p>
+    <div class="search-example">"Customer Support" AND (BPO OR "Customer Service") AND (Hubli OR Bangalore)</div>
+    <p class="case-disclosure">Illustrative search only. Adjust keywords, location and platform syntax to the actual requirement.</p>
+   </article>
+   <article class="case-panel reveal">
+    <h3>03 · Screen consistently</h3>
+    <ul><li>Relevant customer-service experience.</li><li>Communication and problem-solving examples.</li><li>Location and schedule fit, where applicable.</li><li>Notice period, salary expectations and motivation.</li></ul>
+    <p>Record evidence from the screening conversation rather than relying on assumptions from the resume alone.</p>
+   </article>
+   <article class="case-panel reveal">
+    <h3>04 · Track and coordinate</h3>
+    <p>Maintain a candidate tracker with clear stages:</p>
+    <div class="flow"><span>Sourced</span><b>→</b><span>Screened</span><b>→</b><span>Shortlisted</span><b>→</b><span>Interview</span><b>→</b><span>Offer</span><b>→</b><span>Joined</span></div>
+    <p>Capture follow-ups, interview feedback and next actions so candidates and stakeholders receive timely updates.</p>
+   </article>
+  </div>
+  <div class="case-panel reveal">
+   <h3>Sample screening scorecard</h3>
+   <p>Illustrative weights only; adjust them to the actual job description.</p>
+   <ul><li>Relevant experience — 30%</li><li>Communication skills — 25%</li><li>Problem-solving — 20%</li><li>Location and schedule fit — 15%</li><li>Notice period and salary fit — 10%</li></ul>
+   <p class="case-disclosure">This scorecard demonstrates a structured approach; it does not represent completed recruitment outcomes from this fictional scenario.</p>
   </div>
  </div>
 </section>
